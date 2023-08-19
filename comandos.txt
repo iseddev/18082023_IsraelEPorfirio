@@ -1,0 +1,33 @@
+  501  mkdir 18082023_IsraelEPorfirio
+  502  cd 18082023_IsraelEPorfirio
+  503  git init
+  504  git remote add origin https://github.com/iseddev/18082023_IsraelEPorfirio.git
+  505  touch main.js
+  506  touch index.html
+  507  git add .
+  508  git commit -m "Primer commit, creación de archivos index.html y main.js"
+  509  git push -u origin main
+  510  git switch -c feature
+  511  mkdir Hardware
+  512  mkdir Software
+  513  mkdir SeguridadInformatica
+  514  cd Hardware
+  515  touch resumen.txt
+  516  cd ..
+  517  cd Software
+  518  touch resumen.txt
+  519  cd ..
+  520  cd SeguridadInformatica
+  521  touch resumen.txt
+  522  cd ..
+  523  git push origin feature
+  524  git switch main
+  525  mv main.js resumenHardware.txt
+  526  mv index.html resumenSoftware.txt
+  527  echo "* Photoshop \n" >> resumenSoftware.txt
+  528  echo "* Illustrator /n" >> resumenSoftware.txt
+  529  echo "* Microsoft Office" >> resumenSoftware.txt
+  530  echo "* Caché" >> resumenHardware.txt
+  531  echo "* RAM" >> resumenHardware.txt
+  532  echo "* ROM" >> resumenHardware.txt
+  533  history 50 > comandos.txt
